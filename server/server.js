@@ -19,6 +19,15 @@ app.use('/auth', require('./routes/auth'));
 app.use('/tasks', require('./routes/tasks'));
 app.use('/history', require('./routes/history'));
 
+// Health Check
+app.get('/', (req, res) => {
+    res.send('Backend is running');
+});
+
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+if (require.main === module) {
+    app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+}
+
+module.exports = app;
