@@ -1,0 +1,116 @@
+.insights-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.insights-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text-main);
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.insight-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.insight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.icon-wrapper.blue {
+    color: #646cff;
+    background: rgba(100, 108, 255, 0.1);
+}
+
+.icon-wrapper.green {
+    color: #42b883;
+    background: rgba(66, 184, 131, 0.1);
+}
+
+.icon-wrapper.orange {
+    color: #ff9f43;
+    background: rgba(255, 159, 67, 0.1);
+}
+
+.icon-wrapper.red {
+    color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+}
+
+.stat-content h3 {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.stat-content p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.sub-label {
+    font-size: 0.75rem !important;
+    color: var(--text-secondary) !important;
+    font-weight: 400 !important;
+    margin-bottom: 0.25rem;
+}
+
+.motivation-box {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+.motivation-box p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .insights-grid {
+        grid-template-columns: 1fr;
+    }
+}

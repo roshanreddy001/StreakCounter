@@ -1,0 +1,66 @@
+.analytics-card {
+    padding: 1.5rem;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.chart-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.progress-stats {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.progress-track {
+    display: flex;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+    border-radius: 999px;
+    background-color: var(--bg-secondary);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-bar.completed {
+    background-color: var(--success);
+}
+
+.progress-bar.remaining {
+    background-color: var(--danger);
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.label-completed {
+    color: var(--success);
+}
+
+.label-remaining {
+    color: var(--danger);
+}

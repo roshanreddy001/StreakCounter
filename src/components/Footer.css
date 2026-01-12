@@ -1,0 +1,76 @@
+/* Sticky Full-Width Footer (Minimal) */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 0.5rem 0;
+    /* Minimal height */
+
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+[data-theme='dark'] .footer {
+    background: rgba(15, 23, 42, 0.85);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center everything */
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: -0.01em;
+}
+
+.footer-text strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.footer-links {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    opacity: 0.8;
+    white-space: nowrap;
+}
+
+/* On mobile, stack if needed or keep inline if small enough */
+@media (max-width: 480px) {
+    .footer-content {
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .footer-text {
+        font-size: 0.75rem;
+    }
+
+    .footer-links {
+        display: none;
+        /* Hide copyright on super small screens to keep it minimal */
+    }
+}

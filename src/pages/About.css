@@ -1,0 +1,36 @@
+.about-container {
+    padding: 6rem 2rem 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, var(--primary), #a78bfa);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-card {
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    line-height: 1.8;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,44 @@
+.streak-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.streak-icon-wrapper {
+    margin-bottom: 1rem;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.streak-count {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    text-shadow: var(--shadow-glow);
+}
+
+.streak-label {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
