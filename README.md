@@ -1,16 +1,48 @@
-# React + Vite
+🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌟 StreakCounter — Build Consistency, One Day at a Time 🔥
 
-Currently, two official plugins are available:
+StreakCounter is a modern productivity web app designed to help users build habits, track daily tasks, and maintain streaks through a beautiful calendar-based experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Why StreakCounter?
+Because consistency beats motivation — every single day.
 
-## React Compiler
+🚀 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📝 Task-wise Streak Tracking — each task maintains its own streak
 
-## Expanding the ESLint configuration
+📅 Calendar History View — month-wise & week-wise consistency tracking
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔥 Best Streak Insights — visualize progress over time
+
+🏆 Achievements & Badges — unlock rewards for consistency
+
+🤖 AI-Powered Badges — dynamic badge generation using Gemini API
+
+🌙 Light / Dark Mode — eye-friendly design
+
+💾 MongoDB Persistence — user-specific data storage
+
+👤 Guest Mode Support — try without signing up
+
+📱 Fully Responsive — works on all devices
+
+🧠 Tech Stack
+
+⚛️ React
+
+🎨 Pure CSS (No Tailwind)
+
+🗄️ MongoDB
+
+🌐 Node.js / Express
+
+🤖 Gemini AI API
+
+🎯 Vision
+
+StreakCounter is built to transform daily consistency into visible progress — inspired by platforms like GitHub & LeetCode, but focused on personal productivity.
+
+👨‍💻 Author
+
+Built with consistency ❤️ by Roshan Reddy
